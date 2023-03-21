@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>اسم العميل | IT Specialist</title>
+        <!-- CDN bootstrap -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+            integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+            integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <!-- CDN font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- main css file -->
+        <link rel="stylesheet" href="assets/css/client.css" />
+    </head>
+    <body>
+        <div id="preloader"></div>
+        <!-- start header -->
+        <header class="position-fixed w-100 container-fluid">
+            <nav class="d-flex justify-content-between align-items-center">
+                <div>
+                    <div class="logo text-light">
+                        <a href="client.html">IT Specialist</a>
+                    </div>
+                </div>
+                <div class="nav-links d-flex justify-content-center align-items-center">
+                    <a href="client-basket.html" class="text-light">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                    </a>
+                    <a href="client-chat.html" class="text-light msg-parent position-relative">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <div class="bg-light msg position-absolute d-none">
+                            <div class="container">
+                                <!-- in case there is no msgs -->
+                                <div class="text-center p-3 d-none">لا توجد رسائل</div>
+                                <!-- in case there are msgs -->
+                                <!-- loop here -->
+                                <div class="row border-bottom mb-1 overflow-hidden">
+                                    <div class="col-2">
+                                        <div class="msg-img overflow-hidden">
+                                            <img src="assets/imgs/user.jpg" class="w-100 h-100" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-10">
+                                        <h6>احمد فودة</h6>
+                                        <p>
+                                            نص الرسالة يظهر هنا وتستطيع ان تأتى من الداتا بيز بعدد الحرووف اوالكلمات التى تختار لها ان تظهر
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- loop here -->
+                            </div>
+                        </div>
+                    </a>
+                    <a href="index.html" class="position-relative nav-img me-md-4" title="user-name">
+                        <img src="assets/imgs/user.jpg" class="w-100 rounded-circle" alt="" />
+                        <div class="bg-light log-out position-absolute d-none">
+                            تسجيل خروج
+                        </div>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <!-- end header -->
+        <!-- start hero -->
+        <div class="hero position-relative">
+            <div class="overlay position-absolute d-flex justify-content-center align-items-center">
+                <div class="container text-light">
+                    <h1 class="text-center mb-3">مرحبا بك فى موقع IT Specialist</h1>
+                    <p class="text-center">
+                        مستعدين لخدمتك في اي وقت لأي استفسار تقني او خدمات تقنية من خلال التواصل مع مختصين محترفين في مجال تقنية المعلومات
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- end hero -->
+        <!--start services section -->
+        <div class="services">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="fs-4">مقدمين الخدمات</div>
+                    <div><button class="py-2 px-3">عرض الجميع</button></div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="assets/imgs/user.jpg" class="card-img-top" alt="User 1 Photo" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center">أحمد فودة</h5>
+                                <p class="card-text">التخصص: <span>برمجة الويب</span></p>
+                                <p class="card-text">
+                                    التقييم:
+                                    <span class="text-warning">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </span>
+                                </p>
+                                <div>
+                                    <a href="#" class="card-btn text-center py-2 rounded">تواصل معى</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="assets/imgs/user.jpg" class="card-img-top" alt="User 1 Photo" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center">أحمد فودة</h5>
+                                <p class="card-text">التخصص: <span>برمجة الويب</span></p>
+                                <p class="card-text">
+                                    التقييم:
+                                    <span class="text-warning">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </span>
+                                </p>
+                                <div>
+                                    <a href="#" class="card-btn text-center py-2 rounded">تواصل معى</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="assets/imgs/user.jpg" class="card-img-top" alt="User 1 Photo" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center">أحمد فودة</h5>
+                                <p class="card-text">التخصص: <span>برمجة الويب</span></p>
+                                <p class="card-text">
+                                    التقييم:
+                                    <span class="text-warning">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </span>
+                                </p>
+                                <div>
+                                    <a href="#" class="card-btn text-center py-2 rounded">تواصل معى</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="assets/imgs/user.jpg" class="card-img-top" alt="User 1 Photo" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center">أحمد فودة</h5>
+                                <p class="card-text">التخصص: <span>برمجة الويب</span></p>
+                                <p class="card-text">
+                                    التقييم:
+                                    <span class="text-warning">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </span>
+                                </p>
+                                <div>
+                                    <a href="#" class="card-btn text-center py-2 rounded">تواصل معى</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="assets/imgs/user.jpg" class="card-img-top" alt="User 1 Photo" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center">أحمد فودة</h5>
+                                <p class="card-text">التخصص: <span>برمجة الويب</span></p>
+                                <p class="card-text">
+                                    التقييم:
+                                    <span class="text-warning">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </span>
+                                </p>
+                                <div>
+                                    <a href="#" class="card-btn text-center py-2 rounded">تواصل معى</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="assets/imgs/user.jpg" class="card-img-top" alt="User 1 Photo" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center">أحمد فودة</h5>
+                                <p class="card-text">التخصص: <span>برمجة الويب</span></p>
+                                <p class="card-text">
+                                    التقييم:
+                                    <span class="text-warning">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </span>
+                                </p>
+                                <div>
+                                    <a href="#" class="card-btn text-center py-2 rounded">تواصل معى</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="assets/imgs/user.jpg" class="card-img-top" alt="User 1 Photo" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center">أحمد فودة</h5>
+                                <p class="card-text">التخصص: <span>برمجة الويب</span></p>
+                                <p class="card-text">
+                                    التقييم:
+                                    <span class="text-warning">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </span>
+                                </p>
+                                <div>
+                                    <a href="#" class="card-btn text-center py-2 rounded">تواصل معى</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="assets/imgs/user.jpg" class="card-img-top" alt="User 1 Photo" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center">أحمد فودة</h5>
+                                <p class="card-text">التخصص: <span>برمجة الويب</span></p>
+                                <p class="card-text">
+                                    التقييم:
+                                    <span class="text-warning">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </span>
+                                </p>
+                                <div>
+                                    <a href="#" class="card-btn text-center py-2 rounded">تواصل معى</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end services section -->
+        <!-- start footer -->
+        <footer>
+            <div class="centered">IT Specialist</div>
+            <div class="copy-rights">جميع الحقوق محفوظة &copy; منصة <span>IT Specialist</span></div>
+        </footer>
+        <!-- end footer -->
+        <!-- ---------- main js file ----------------- -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

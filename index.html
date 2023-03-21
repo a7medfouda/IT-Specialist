@@ -1,402 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IT Specialist</title>
-    <!-- CDN bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
-      integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
-      integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- CDN font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- main css file -->
-    <link rel="stylesheet" href="assets/css/index.css" />
-  </head>
-  <body>
-    <div id="preloader"></div>
-    <!-- start header -->
-    <header class="position-fixed w-100 py-3 container-fluid">
-      <nav class="d-flex justify-content-between align-items-center">
-        <div>
-          <div class="logo text-light">
-            <a href="index.html">IT Specialist</a>
-          </div>
-        </div>
-        <div class="login">
-          <a
-            href="login-client.html"
-            class="ms-1 ms-md-2 px-2 py-1 px-md-3 py-md-2"
-            ><span class="ps-1"
-              ><i class="fa-solid fa-right-to-bracket"></i
-            ></span>
-            دخول</a
-          >
-          <a href="register.html" class="px-2 py-1 px-md-3 py-md-2"
-            ><span class="ps-1"><i class="fa-solid fa-user-plus"></i></span>
-            حساب جديد</a
-          >
-        </div>
-      </nav>
-    </header>
-    <!-- end header -->
-    <!-- start hero -->
-    <div class="hero position-relative">
-      <div
-        class="overlay position-absolute d-flex justify-content-center align-items-center"
-      >
-        <div class="container text-light">
-          <h1 class="text-center mb-3">مرحبا بك فى موقع IT Specialist</h1>
-          <p class="text-center">
-            مستعدين لخدمتك في اي وقت لأي استفسار تقني او خدمات تقنية من خلال
-            التواصل مع مختصين محترفين في مجال تقنية المعلومات
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- end hero -->
-    <!--start how the website works -->
-    <section class="how-it-works">
-      <div class="container-fluid">
-        <div class="text-center m-auto mb-5 fs-3">
-          كيف يعمل موقع IT Specialist
-        </div>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="item p-3 position-relative">
-              <div
-                class="item-num position-absolute text-center text-light d-flex justify-content-center align-items-center"
-              >
-                1
-              </div>
-              <div class="row">
-                <div class="col-2">
-                  <img
-                    src="assets/imgs/how-it-works1.svg"
-                    class="w-100"
-                    alt=""
-                  />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>IT Specialist</title>
+        <!-- CDN bootstrap -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+            integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+            integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <!-- CDN font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- main css file -->
+        <link rel="stylesheet" href="assets/css/index.css" />
+    </head>
+    <body>
+        <div id="preloader"></div>
+        <!-- start header -->
+        <header class="position-fixed w-100 py-3 container-fluid">
+            <nav class="d-flex justify-content-between align-items-center">
+                <div>
+                    <div class="logo text-light">
+                        <a href="index.html">IT Specialist</a>
+                    </div>
                 </div>
-                <div class="col-10">
-                  <div>
-                    <h5 class="mb-3">استعرض الخدمات</h5>
-                    <p>
-                      ابحث عن الخدمة التي تحتاجها باستخدام مربع البحث في الأعلى
-                      أو عبر التصنيفات.
+                <div class="login">
+                    <a href="login-client.html" class="ms-1 ms-md-2 px-2 py-1 px-md-3 py-md-2">
+                        <span class="ps-1"><i class="fa-solid fa-right-to-bracket"></i></span> دخول
+                    </a>
+                    <a href="register.html" class="px-2 py-1 px-md-3 py-md-2">
+                        <span class="ps-1"><i class="fa-solid fa-user-plus"></i></span> حساب جديد
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <!-- end header -->
+        <!-- start hero -->
+        <div class="hero position-relative">
+            <div class="overlay position-absolute d-flex justify-content-center align-items-center">
+                <div class="container text-light">
+                    <h1 class="text-center mb-3">مرحبا بك فى موقع IT Specialist</h1>
+                    <p class="text-center">
+                        مستعدين لخدمتك في اي وقت لأي استفسار تقني او خدمات تقنية من خلال التواصل مع مختصين محترفين في مجال تقنية المعلومات
                     </p>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="item p-3 position-relative">
-              <div
-                class="item-num position-absolute text-center text-light d-flex justify-content-center align-items-center"
-              >
-                2
-              </div>
-              <div class="row">
-                <div class="col-2">
-                  <img
-                    src="assets/imgs/how-it-works2.svg"
-                    class="w-100"
-                    alt=""
-                  />
-                </div>
-                <div class="col-10">
-                  <div>
-                    <h5 class="mb-3">اطلب الخدمة</h5>
-                    <p>
-                      راجع وصف الخدمة وتقييمات المشترين ثم اطلبها لفتح تواصل مع
-                      البائع.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="item p-3 position-relative">
-              <div
-                class="item-num position-absolute text-center text-light d-flex justify-content-center align-items-center"
-              >
-                3
-              </div>
-              <div class="row">
-                <div class="col-2">
-                  <img
-                    src="assets/imgs/how-it-works3.svg"
-                    class="w-100"
-                    alt=""
-                  />
-                </div>
-                <div class="col-10">
-                  <div>
-                    <h5 class="mb-3">استلم خدمتك</h5>
-                    <p>
-                      تواصل مع البائع مباشرة داخل موقع خمسات حتى استلام طلبك
-                      كاملاً.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <!--end how the website works -->
-    <!--start services section -->
-    <div class="services">
-      <div class="container-fluid">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-          <div class="fs-4">مقدمين الخدمات</div>
-          <div><button class="py-2 px-3">عرض الجميع</button></div>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-3">
-            <div class="card">
-              <img
-                src="assets/imgs/user.jpg"
-                class="card-img-top"
-                alt="User 1 Photo"
-              />
-              <div class="card-body">
-                <h5 class="card-title text-center">أحمد فودة</h5>
-                <p class="card-text">التخصص: <span>برمجة الويب</span></p>
-                <p class="card-text">
-                  التقييم:
-                  <span class="text-warning">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </span>
-                </p>
-                <div>
-                  <a href="#" class="card-btn text-center py-2 rounded"
-                    >تواصل معى</a
-                  >
+        <!-- end hero -->
+        <!--start how the website works -->
+        <section class="how-it-works">
+            <div class="container-fluid">
+                <div class="text-center m-auto mb-5 fs-3">
+                    كيف يعمل موقع IT Specialist
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card">
-              <img
-                src="assets/imgs/user.jpg"
-                class="card-img-top"
-                alt="User 1 Photo"
-              />
-              <div class="card-body">
-                <h5 class="card-title text-center">أحمد فودة</h5>
-                <p class="card-text">التخصص: <span>برمجة الويب</span></p>
-                <p class="card-text">
-                  التقييم:
-                  <span class="text-warning">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </span>
-                </p>
-                <div>
-                  <a href="#" class="card-btn text-center py-2 rounded"
-                    >تواصل معى</a
-                  >
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="item p-3 position-relative">
+                            <div class="item-num position-absolute text-center text-light d-flex justify-content-center align-items-center">
+                                1
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="assets/imgs/how-it-works1.svg" class="w-100" alt="" />
+                                </div>
+                                <div class="col-10">
+                                    <div>
+                                        <h5 class="mb-3">استعرض الخدمات</h5>
+                                        <p>
+                                            ابحث عن الخدمة التي تحتاجها باستخدام مربع البحث في الأعلى أو عبر التصنيفات.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item p-3 position-relative">
+                            <div class="item-num position-absolute text-center text-light d-flex justify-content-center align-items-center">
+                                2
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="assets/imgs/how-it-works2.svg" class="w-100" alt="" />
+                                </div>
+                                <div class="col-10">
+                                    <div>
+                                        <h5 class="mb-3">اطلب الخدمة</h5>
+                                        <p>
+                                            راجع وصف الخدمة وتقييمات المشترين ثم اطلبها لفتح تواصل مع البائع.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item p-3 position-relative">
+                            <div class="item-num position-absolute text-center text-light d-flex justify-content-center align-items-center">
+                                3
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="assets/imgs/how-it-works3.svg" class="w-100" alt="" />
+                                </div>
+                                <div class="col-10">
+                                    <div>
+                                        <h5 class="mb-3">استلم خدمتك</h5>
+                                        <p>
+                                            تواصل مع البائع مباشرة داخل موقع خمسات حتى استلام طلبك كاملاً.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card">
-              <img
-                src="assets/imgs/user.jpg"
-                class="card-img-top"
-                alt="User 1 Photo"
-              />
-              <div class="card-body">
-                <h5 class="card-title text-center">أحمد فودة</h5>
-                <p class="card-text">التخصص: <span>برمجة الويب</span></p>
-                <p class="card-text">
-                  التقييم:
-                  <span class="text-warning">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </span>
-                </p>
-                <div>
-                  <a href="#" class="card-btn text-center py-2 rounded"
-                    >تواصل معى</a
-                  >
+        </section>
+        <!--end how the website works -->
+        <!--start services section -->
+        <div class="services">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="fs-4">مقدمين الخدمات</div>
+                    <div><button class="py-2 px-3">عرض الجميع</button></div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card">
-              <img
-                src="assets/imgs/user.jpg"
-                class="card-img-top"
-                alt="User 1 Photo"
-              />
-              <div class="card-body">
-                <h5 class="card-title text-center">أحمد فودة</h5>
-                <p class="card-text">التخصص: <span>برمجة الويب</span></p>
-                <p class="card-text">
-                  التقييم:
-                  <span class="text-warning">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </span>
-                </p>
-                <div>
-                  <a href="#" class="card-btn text-center py-2 rounded"
-                    >تواصل معى</a
-                  >
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="assets/imgs/user.jpg" class="card-img-top" alt="User 1 Photo" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center">أحمد فودة</h5>
+                                <p class="card-text">التخصص: <span>برمجة الويب</span></p>
+                                <p class="card-text">
+                                    التقييم:
+                                    <span class="text-warning">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </span>
+                                </p>
+                                <div>
+                                    <a href="#" class="card-btn text-center py-2 rounded">تواصل معى</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="assets/imgs/user.jpg" class="card-img-top" alt="User 1 Photo" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center">أحمد فودة</h5>
+                                <p class="card-text">التخصص: <span>برمجة الويب</span></p>
+                                <p class="card-text">
+                                    التقييم:
+                                    <span class="text-warning">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </span>
+                                </p>
+                                <div>
+                                    <a href="#" class="card-btn text-center py-2 rounded">تواصل معى</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="assets/imgs/user.jpg" class="card-img-top" alt="User 1 Photo" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center">أحمد فودة</h5>
+                                <p class="card-text">التخصص: <span>برمجة الويب</span></p>
+                                <p class="card-text">
+                                    التقييم:
+                                    <span class="text-warning">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </span>
+                                </p>
+                                <div>
+                                    <a href="#" class="card-btn text-center py-2 rounded">تواصل معى</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="assets/imgs/user.jpg" class="card-img-top" alt="User 1 Photo" />
+                            <div class="card-body">
+                                <h5 class="card-title text-center">أحمد فودة</h5>
+                                <p class="card-text">التخصص: <span>برمجة الويب</span></p>
+                                <p class="card-text">
+                                    التقييم:
+                                    <span class="text-warning">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </span>
+                                </p>
+                                <div>
+                                    <a href="#" class="card-btn text-center py-2 rounded">تواصل معى</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <!--end services section -->
-    <!-- start home login section -->
-    <section class="py-5 home-login-section">
-      <div class="text-center text-light fs-3">انجز أعمالك بسهولة وأمان</div>
-      <div class="d-flex justify-content-center align-items-center mt-4">
-        <a href="#" class="px-3 py-2">سجل الآن</a>
-      </div>
-    </section>
-    <!-- end home login section -->
-    <!-- start popular-questions -->
-    <section class="popular-questions container">
-      <div class="text-center fs-3 mb-3">الأسئلة الشائعة</div>
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseOne"
-              aria-expanded="false"
-              aria-controls="flush-collapseOne"
-            >
-              ما هو موقع IT Specialist؟
-            </button>
-          </h2>
-          <div
-            id="flush-collapseOne"
-            class="accordion-collapse collapse"
-            aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div class="accordion-body">
-              خمسات هو أكبر سوق عربي لبيع وشراء الخدمات المصغرة. يجمع خمسات بين
-              الشباب العربي الموهوب المستعد لتقديم خبراته ومهاراته على شكل خدمات
-              مصغرة بأسعار تبدأ من 5 دولار، وبين الأفراد ورواد الأعمال الذين
-              يحتاجون هذه الخدمات لتساعدهم في تنمية وتطوير أعمالهم.
+        <!--end services section -->
+        <!-- start home login section -->
+        <section class="py-5 home-login-section">
+            <div class="text-center text-light fs-3">انجز أعمالك بسهولة وأمان</div>
+            <div class="d-flex justify-content-center align-items-center mt-4">
+                <a href="#" class="px-3 py-2">سجل الآن</a>
             </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseTwo"
-              aria-expanded="false"
-              aria-controls="flush-collapseTwo"
-            >
-              كيف يضمن موقع IT Specialist حقوقى؟
-            </button>
-          </h2>
-          <div
-            id="flush-collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="flush-headingTwo"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div class="accordion-body">
-              موقع خمسات يضمن لك حقوقك بشكل كامل، كن مطمئنا عند شراء أي خدمة
-              معروضة في الموقع، يقوم خمسات بدور الوسيط بين المشتري والبائع ويحمي
-              حقوق الطرفين المالية في حال الالتزام بشروط موقع خمسات وبنود الضمان
-              والإبقاء على جميع التواصلات داخل الموقع.
+        </section>
+        <!-- end home login section -->
+        <!-- start popular-questions -->
+        <section class="popular-questions container">
+            <div class="text-center fs-3 mb-3">الأسئلة الشائعة</div>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            ما هو موقع IT Specialist؟
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            خمسات هو أكبر سوق عربي لبيع وشراء الخدمات المصغرة. يجمع خمسات بين الشباب العربي الموهوب المستعد لتقديم خبراته ومهاراته على شكل خدمات مصغرة بأسعار تبدأ من 5 دولار، وبين الأفراد ورواد الأعمال الذين يحتاجون هذه
+                            الخدمات لتساعدهم في تنمية وتطوير أعمالهم.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            كيف يضمن موقع IT Specialist حقوقى؟
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            موقع خمسات يضمن لك حقوقك بشكل كامل، كن مطمئنا عند شراء أي خدمة معروضة في الموقع، يقوم خمسات بدور الوسيط بين المشتري والبائع ويحمي حقوق الطرفين المالية في حال الالتزام بشروط موقع خمسات وبنود الضمان والإبقاء على
+                            جميع التواصلات داخل الموقع.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            كيف يمكن أن أستفيد من موقع IT Specialist؟
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            قد يتوقف إطلاق شركتك على تصميم شعار، أو يتوقف عملك بسبب الحاجة لمحتوى متجدد لموقعك، ربما تملك فكرة رائعة لبرنامج أو تطبيق ولكن ليست لديك أدنى فكرة عن البرمجة والتطوير، لديك بحث دراسي أو ترجمة مطلوبة في وقت معين
+                            وتحتاج لمن يساعدك فيها. يوفّر خمسات كل الخدمات الإبداعية والاحترافية التي تحتاجها لتنمية وتطوير أعمالك، والتي يمكن طلبها من أشخاص موهوبين مستعدين لخدمتك في إنجاز مهامك بسهولة عبر الإنترنت وبأسعار اقتصادية تتناسب
+                            مع الأفراد ورواد الأعمال من أصحاب المشاريع الناشئة.
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseThree"
-              aria-expanded="false"
-              aria-controls="flush-collapseThree"
-            >
-              كيف يمكن أن أستفيد من موقع IT Specialist؟
-            </button>
-          </h2>
-          <div
-            id="flush-collapseThree"
-            class="accordion-collapse collapse"
-            aria-labelledby="flush-headingThree"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div class="accordion-body">
-              قد يتوقف إطلاق شركتك على تصميم شعار، أو يتوقف عملك بسبب الحاجة
-              لمحتوى متجدد لموقعك، ربما تملك فكرة رائعة لبرنامج أو تطبيق ولكن
-              ليست لديك أدنى فكرة عن البرمجة والتطوير، لديك بحث دراسي أو ترجمة
-              مطلوبة في وقت معين وتحتاج لمن يساعدك فيها. يوفّر خمسات كل الخدمات
-              الإبداعية والاحترافية التي تحتاجها لتنمية وتطوير أعمالك، والتي
-              يمكن طلبها من أشخاص موهوبين مستعدين لخدمتك في إنجاز مهامك بسهولة
-              عبر الإنترنت وبأسعار اقتصادية تتناسب مع الأفراد ورواد الأعمال من
-              أصحاب المشاريع الناشئة.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end popular-questions -->
-    <!-- start footer -->
-    <footer>
-      <div class="centered">IT Specialist</div>
-      <div class="copy-rights">
-        جميع الحقوق محفوظة &copy; منصة <span>IT Specialist</span>
-      </div>
-    </footer>
-    <!-- end footer -->
-    <!-- ---------- main js file ----------------- -->
-    <script src="assets/js/main.js"></script>
-  </body>
+        </section>
+        <!-- end popular-questions -->
+        <!-- start footer -->
+        <footer>
+            <div class="centered">IT Specialist</div>
+            <div class="copy-rights">جميع الحقوق محفوظة &copy; منصة <span>IT Specialist</span></div>
+        </footer>
+        <!-- end footer -->
+        <!-- ---------- main js file ----------------- -->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>

@@ -41,7 +41,8 @@
 				</div>
 				<div class="login">
 					<a href="login-client.html" class="ms-1 ms-md-2 px-2 py-1 px-md-3 py-md-2">
-						<span class="ps-1"><i class="fa-solid fa-right-to-bracket"></i></span> دخول
+						<span class="ps-1"><i class="fa-solid fa-right-to-bracket"></i></span>
+						دخول
 					</a>
 					<a href="register.html" class="px-2 py-1 px-md-3 py-md-2">
 						<span class="ps-1"><i class="fa-solid fa-user-plus"></i></span> حساب جديد
@@ -51,20 +52,16 @@
 		</header>
 		<!-- end header -->
 		<section class="p-5 bg-light container">
-			<form action="">
-				<h2 class="mb-5">تسجيل الدخول</h2>
+			<form action="reset-password.html" method="POST">
+				<h2 class="mb-5">إعادة تعيين كلمة المرور</h2>
 				<div class="mb-3">
-					<label for="email" class="mb-2">البريد الإلكترونى</label>
-					<input type="email" id="email" name="tech_email_address" class="form-control" />
+					<label for="email" class="mb-2">أدخل البريد الإلكترونى</label>
+					<input type="email" id="email" name="email_address" class="form-control" />
 				</div>
-				<div>
-					<label for="pass" class="mb-2">كلمة السر</label>
-					<input type="password" id="pass" name="tech_password" class="form-control" />
-					<a href="forget-pass.html" class="text-muted mt-2">نسيت كلمة السر؟</a>
-					<a href="login-client.html" class="login-as">الدخول كعميل!</a>
-				</div>
-				<input type="submit" class="px-md-5 px-4 py-1 rounded mt-3" value="دخول" />
+				<input type="submit" class="px-md-5 px-4 py-1 rounded mt-3" value="أرسل رمز التعيين" />
 			</form>
 		</section>
+		<!-- main js file -->
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>

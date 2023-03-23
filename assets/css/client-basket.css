@@ -26,7 +26,6 @@ span {
 a:hover {
   color: black;
 }
-
 /* global rules */
 /* --------------------------------------------- */
 /* header */
@@ -45,20 +44,49 @@ header .logo a {
   width: 40px !important;
   height: 35px !important;
 }
-.nav-links a {
+.nav-links .basket {
+  transition: var(--main-transition);
+}
+.nav-links .basket:hover {
+  background-color: var(--main-color);
+}
+.nav-links .nav-img,
+.nav-links .msg-parent,
+.nav-links .basket {
   width: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70px;
 }
-.nav-links a div.msg {
+.nav-links .nav-img,
+.nav-links .msg-parent {
+  cursor: pointer;
+}
+.nav-links a,
+.nav-links div {
+  transition: var(--main-transition);
+}
+.nav-links .nav-img:hover {
+  background-color: var(--main-color);
+}
+.nav-links div.msg {
   color: black;
   width: 400px;
   left: 0;
   top: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+@media (max-width: 767px) {
+  .nav-links div.msg {
+    width: 300px;
+    left: -20px;
+  }
+  .nav-img img {
+    width: 50px !important;
+    height: 45px !important;
+  }
 }
 .nav-links a div.msg p {
   font-size: 14px;
@@ -89,12 +117,6 @@ header .logo a {
   .nav-links a div.msg p {
     font-size: 12px;
   }
-}
-.nav-links a {
-  transition: var(--main-transition);
-}
-.nav-links a:hover {
-  background-color: var(--main-color);
 }
 @media (max-width: 991px) {
   header .logo {

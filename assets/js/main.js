@@ -16,12 +16,12 @@ window.addEventListener("load", function () {
   loader.style.display = "none";
 });
 // ----------------
-// client page log out
+// header logout, and appearing msgs
 let logOutParent = document.querySelector(".nav-img");
 let logOutParentImg = document.querySelector(".nav-img img");
-console.log(logOutParentImg);
 let logOut = document.querySelector(".log-out");
 let msgParent = document.querySelector(".msg-parent");
+let msgParentSpan = document.querySelector(".msg-parent span");
 let msg = document.querySelector(".msg");
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -29,22 +29,24 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
     logOut.classList.toggle("d-none");
   });
+  logOutParentImg.addEventListener("click", function (e) {
+    e.stopPropagation();
+    logOutParentImg.nextElementSibling.classList.toggle("d-none");
+  });
 
-  msgParent.addEventListener("click", function (e) {
-    e.preventDefault();
+  msgParent.addEventListener("click", function () {
+    msg.classList.toggle("d-none");
+  });
+  msgParentSpan.addEventListener("click", function (e) {
+    e.stopPropagation();
     msg.classList.toggle("d-none");
   });
 
   logOut.addEventListener("click", function (event) {
     event.stopPropagation();
   });
-  msg.addEventListener("click", function (event) {
-    event.stopPropagation();
-  });
+
   logOut.addEventListener("mouseover", function (event) {
-    event.stopPropagation();
-  });
-  msg.addEventListener("mouseover", function (event) {
     event.stopPropagation();
   });
 
@@ -58,8 +60,12 @@ document.addEventListener("DOMContentLoaded", function () {
   logOutParent.addEventListener("mouseleave", function () {
     logOutParent.style.backgroundColor = "transparent";
   });
-  msg.addEventListener("mouseover", function (event) {
+  msg.addEventListener("mouseover", function (e) {
+    e.stopPropagation();
     msgParent.style.backgroundColor = "transparent";
+  });
+  msg.addEventListener("click", function (e) {
+    e.stopPropagation();
   });
 
   msgParent.addEventListener("mouseover", function () {

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>المشتريات | IT Specialist</title>
+		<!-- CDN bootstrap -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+			integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+			integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<!-- CDN font awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- main css file -->
+		<link rel="stylesheet" href="assets/css/tech-profile.css" />
+	</head>
+	<body>
+		<!-- start header -->
+		<header class="w-100 container-fluid">
+			<nav class="d-flex justify-content-between align-items-center">
+				<div>
+					<div class="logo text-light">
+						<a href="client.html">IT Specialist</a>
+					</div>
+				</div>
+				<div class="nav-links d-flex justify-content-center align-items-center">
+					<a href="client-basket.html" class="text-light basket">
+						<span><i class="fa-solid fa-cart-shopping"></i></span>
+					</a>
+					<div class="text-light msg-parent position-relative">
+						<span><i class="fa-solid fa-envelope"></i></span>
+						<div class="bg-light msg position-absolute d-none">
+							<a href="client-chat.html">
+								<div class="container">
+									<!-- in case there is no msgs -->
+									<div class="text-center p-3 d-none">لا توجد رسائل</div>
+									<!-- in case there are msgs -->
+									<!-- loop here -->
+									<div class="row border-bottom mb-1 overflow-hidden">
+										<div class="col-2">
+											<div class="msg-img overflow-hidden">
+												<img src="assets/imgs/user.jpg" class="w-100 h-100" alt="" />
+											</div>
+										</div>
+										<div class="col-10">
+											<h6>احمد فودة</h6>
+											<p>
+												نص الرسالة يظهر هنا وتستطيع ان تأتى من الداتا بيز بعدد الحرووف اوالكلمات التى تختار لها ان تظهر
+											</p>
+										</div>
+									</div>
+									<!-- loop here -->
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="position-relative nav-img me-md-4" title="user-name">
+						<img src="assets/imgs/user.jpg" class="w-100 rounded-circle" alt="" />
+						<div class="bg-light log-out position-absolute d-none">
+							تسجيل خروج
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- end header -->
+		<main class="mb-lg-4">
+			<!-- profile section -->
+			<div class="container profile">
+				<div class="d-flex justify-content-center align-content-center">
+					<div class="profile-img">
+						<img src="assets/imgs/user.jpg" class="w-100" alt="" />
+					</div>
+				</div>
+				<h3 class="text-center my-2">أحمد فودة</h3>
+				<p class="text-center">التخصص: <span>برمجة الويب</span></p>
+				<div class="d-flex justify-content-center">
+					<a href="client-chat.html" class="text-center contact-me btn btn-outline-warning">راسلنى</a>
+				</div>
+			</div>
+			<div class="container-fluid about-me">
+				<div class="row mb-3 mb-md-0">
+					<div class="col-md-8 mb-4 mb-md-0">
+						<div>
+							<h4 class="pb-2 border-bottom">نبذة عنى</h4>
+						</div>
+						<div class="pt-3">
+							أهلا بيك، أنا أحمد فودة خريج هندسة (قسم ميكاترونكس)، بحب الهندسة والتكنولوجيا وكل ما يتعلق بالأشياء الرقمية، مؤمن إن التكنولوجيا هى سحر العصر دا، كونك قادر تفكر وتحول فكرتك دى لحقيقة وتترجمها على أرض الواقع دا لا
+							يوصف بشئ الا إنه سحر، ودا سر إعجابى الشديد بعالم السوفت وير، بدأت اتعلم اكتب كود من سنتين وقررت اكون ويب ديفيلوبر، بحب أتعلم دايما وبحب أساعد. موجود هنا عشان استخدم مهارتى ف كتابة الكود لتحقيق فكرتك.
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div>
+							<div>
+								<h5 class="pb-2 border-bottom">إحصائيات</h5>
+							</div>
+							<div class="row mb-3">
+								<div class="col-5">
+									<div>التقييمات</div>
+								</div>
+								<div class="col-7">
+									<div class="text-warning">
+										<i class="fa-regular fa-star"></i>
+										<i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+									</div>
+								</div>
+							</div>
+							<div class="row mb-4">
+								<div class="col-5">
+									<div>عدد العملاء</div>
+								</div>
+								<div class="col-7">
+									<div>2</div>
+								</div>
+							</div>
+							<div class="row mb-3">
+								<div class="col-5">
+									<div class="my-1">تاربخ التسجيل</div>
+									<div>آخر تواجد</div>
+								</div>
+								<div class="col-7">
+									<div>
+										<div class="my-1">19 يونيو 2020</div>
+										<div>منذ 7 ساعات</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- profile section -->
+		</main>
+		<!-- start footer -->
+		<footer class="w-100">
+			<div class="centered">IT Specialist</div>
+			<div class="copy-rights">جميع الحقوق محفوظة &copy; منصة <span>IT Specialist</span></div>
+		</footer>
+		<!-- end footer -->
+		<!-- ---------- main js file ----------------- -->
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
